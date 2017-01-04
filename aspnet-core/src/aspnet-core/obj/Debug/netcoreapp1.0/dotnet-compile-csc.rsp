@@ -222,6 +222,9 @@
 -resource:"C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\obj\Debug\netcoreapp1.0\aspnet-coredotnet-compile.deps.json",aspnet-core.deps.json
 "C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\Program.cs"
 "C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\Startup.cs"
+"C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\API\CustomersApiController.cs"
+"C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\API\GoodsApiController.cs"
+"C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\API\OrdersApiController.cs"
 "C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\Controllers\AccountController.cs"
 "C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\Controllers\CustomersController.cs"
 "C:\Users\avjma\Documents\GitHub\aspnet-core\aspnet-core\src\aspnet-core\Controllers\GoodsController.cs"
