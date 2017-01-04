@@ -58,13 +58,21 @@ namespace aspnet_core.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,AmountInStock,AmountOrdered,Description,Price,Title")] Good good)
+        public async Task<IActionResult> Create(
+            [Bind("AmountInStock,AmountOrdered,Description,Price,Title")] Good good)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(good);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    _context.Add(good);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+            }
+            catch(DbUpdateException ex)
+            {
+                ModelState.AddModelError("", "Cannot save changes");
             }
             return View(good);
         }
